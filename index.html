@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+  <div class="logo">💳 Payment System</div>
+  <nav>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="report.html">Reports</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+ </nav>
+  
+    <div class="menu-icon" id="menuIcon">☰</div>
+    <script>
+  const menuIcon = document.getElementById("menuIcon");
+  const navLinks = document.getElementById("navLinks");
+
+  menuIcon.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+
+    if (navLinks.classList.contains("active")) {
+      menuIcon.textContent = "✖";
+    } else {
+      menuIcon.textContent = "☰";
+    }
+  });
+</script>
+</header>
+
+
+
+ <div class="container">
+        <h1>Dashboard</h1>
+
+        <!-- Stats Cards -->
+        <div class="stats">
+            <div class="card">
+                <h2 id="totalPayments">0</h2>
+                <p>Total Payments</p>
+            </div>
+            <div class="card">
+                <h2 id="totalAmount">0</h2>
+                <p>Total Amount</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="actions">
+            <button id="goAdd">Add Payment</button>
+            <button id="goReport">Report</button>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
