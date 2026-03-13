@@ -1,0 +1,107 @@
+
+/* abou page */
+
+.header{
+background:#0f766e;
+color:white;
+padding:15px 30px;
+font-size:20px;
+font-weight:bold;
+text-align:center;
+position:fixed;
+top:0;
+width:100%;
+}
+
+body{
+padding-top:70px;
+font-family:Segoe UI;
+background:#f4f4f4;
+}
+
+/* container */
+
+.container{
+max-width:1000px;
+margin:auto;
+padding:20px;
+
+}
+
+h1{
+text-align:center;
+color:#0f766e;
+margin-bottom:30px;
+}
+
+/* about cards */
+
+.about-grid{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.about-card{
+flex:1;
+min-width:250px;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.about-card:hover{
+transform:translateY(-5px);
+}
+
+.about-card h2{
+color:#0f766e;
+margin-bottom:10px;
+}
+
+.about-card p{
+color:#555;
+line-height:1.6;
+}
+
+/* button */
+
+.back-btn{
+text-align:center;
+margin-top:30px;
+}
+
+.back-btn button{
+padding:12px 25px;
+background:#0f766e;
+color:white;
+border:none;
+border-radius:10px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.back-btn button:hover{
+background:#064e48;
+}
+
+/* mopile */
+
+@media(max-width:768px){
+
+body.about-page .header{
+display:none;
+}
+
+.about-grid{
+flex-direction:column;
+}
+
+.back-btn button{
+width:100%;
+}
+
+}
