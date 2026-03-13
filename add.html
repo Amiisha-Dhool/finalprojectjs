@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="add-page">
+    <!-- Container -->
+    <div class="container">
+        <h1>Add Payment</h1>
+        <!-- Payment Form -->
+        <form id="paymentForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="number" id="amount" placeholder="Enter Amount" required>
+            <input type="date" id="date" required>
+            <button type="submit">Add Payment</button>
+        </form>
+
+        <!-- Payments Table -->
+        <table id="paymentsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Payments will appear here -->
+            </tbody>
+        </table>
+
+         <div class="back-btn">
+<a href="index.html">
+<button>Back To Dashboard</button>
+</a>
+</div>
+    </div>
+
+    <script src="add.js"></script>
+</body>
+</html>
