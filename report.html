@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="report.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="report-page">
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">Payment Reports</div>
+    </div>
+
+    <div class="container">
+        <h1>Reports</h1>
+
+        <!-- Charts -->
+        <div class="chart-container">
+            <canvas id="paymentsChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="amountChart"></canvas>
+        </div>
+
+        <!-- Back button -->
+      <div class="back-btn">
+<a href="index.html">
+<button>Back To Dashboard</button>
+</a>
+</div>
+
+    <script src="report.js"></script>
+</body>
+</html>
